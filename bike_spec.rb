@@ -7,7 +7,7 @@ describe Pizza do
 
 
   describe "#initialize" do
-    it "takes a name for its first argument" do
+    it "should create an instance of Pizza" do
       pizza.should be_an_instance_of Pizza
     end
 
@@ -26,7 +26,7 @@ describe Pizza do
 
   describe "#required_bake_time" do
     it "has a required bake time in minutes" do
-      pizza.required_bake_time eq (15)
+      pizza.required_bake_time.should eq(15)
 
     end
   end
